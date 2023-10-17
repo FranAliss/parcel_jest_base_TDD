@@ -1,5 +1,8 @@
 name: 'coverage'
 on:
+    push:
+        branches:
+            - main 
     pull_request_target:
         branches:
             - master
@@ -10,6 +13,7 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - uses: ArtiomTr/jest-coverage-report-action@v2
+
 # jobs:
 #   ci_to_main:
 #     runs-on: ubuntu-latest
