@@ -1,10 +1,10 @@
 name: javascript-CI
 
 on:
-  pull_request_target:
-    branches: [main, master]
   push:
-    branches: [main]
+      branches: [main]
+  pull_request_target:
+      branches: [main, master]
 
 jobs:
   ci_to_main:
