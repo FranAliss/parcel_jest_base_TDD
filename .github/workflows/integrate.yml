@@ -3,7 +3,7 @@ name: javascript-CI
 on:
   push:
     branches: [main]
-  pull_request:
+  pull_request_target:
     branches: [main]
 
 jobs:
@@ -35,7 +35,7 @@ jobs:
       #    target_branch: gh-pages
       #    build_dir: dist
       #  env:
-      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #    GITHUB_TOKEN: 
       - name: Jest coverage report
         uses: ArtiomTr/jest-coverage-report-action@v2.2.1
         id: coverage
