@@ -3,6 +3,8 @@ name: javascript-CI
 on:
   pull_request_target:
     branches: [main, master]
+  push:
+    branches: [main]
 
 jobs:
   ci_to_main:
